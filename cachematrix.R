@@ -4,7 +4,6 @@
 
 makeCacheMatrix <- function(x = matrix()) {
 
-  
     inv <- NULL 
     set <- function(y) { 
       x <<- y 
@@ -43,8 +42,7 @@ cacheSolve <- function(x, ...) {
 ## it calcluates the time difference between 1st run & sucessive runs.
 # Input Parameter : Matrix
 ## Return Parameter : Matrix
-test
-  
+
 testCacheLogic = function(mat){
   ## @mat: an invertible matrix
   
