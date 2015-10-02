@@ -11,7 +11,7 @@ makeCacheMatrix <- function(x = matrix()) {
       inv <<- NULL 
     } 
     get <- function() x 
-      setinverse <- function(inverse) inv <<- inverse 
+    setinverse <- function(inverse) inv <<- inverse 
     getinverse <- function() inv 
     list(set=set, get=get, setinverse=setinverse, getinverse=getinverse) 
   } 
@@ -43,9 +43,9 @@ cacheSolve <- function(x, ...) {
 ## it calcluates the time difference between 1st run & sucessive runs.
 # Input Parameter : Matrix
 ## Return Parameter : Matrix
-
+test
   
-test = function(mat){
+testCacheLogic = function(mat){
   ## @mat: an invertible matrix
   
   temp = makeCacheMatrix(mat)
