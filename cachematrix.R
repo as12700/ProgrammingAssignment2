@@ -1,9 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-# Adding New Comments
-## Changes
+##This function will create the inverse of a matrix
+# Input Parameter : Matrix
+## Return Parameter : Matrix
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -21,7 +18,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## Write a short comment describing this function
+## This function will check if an inverse for a matrix already exists.
+## If Inverse exists it does not calculate the inverse. Returns the inverse from cache.
+# Input Parameter : Matrix
+## Return Parameter : Matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
@@ -38,7 +38,12 @@ cacheSolve <- function(x, ...) {
     x$setinverse(inv) 
     inv 
   } 
-  
+
+## This is a small test tools to check how the logic works
+## it calcluates the time difference between 1st run & sucessive runs.
+# Input Parameter : Matrix
+## Return Parameter : Matrix
+
   
 test = function(mat){
   ## @mat: an invertible matrix
